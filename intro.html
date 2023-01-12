@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Intro</title>
+    <link rel="stylesheet" type="text/css" href="interface.css" />
+    <!-- <script src="libraries/p5.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script> -->
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="send.html">Send</a>
+      <a href="collect.html">Collect</a>
+      <a href="chat.html"class="active">Chat</a>
+      <a href="intro.html">Exit</a>
+      <!-- <a href="Index.html"></a> -->
+      </a>
+    </div>
+
+    <!-- <a href="globalChat_index.html" style="display: none;" id="lim-enter"><button>SONO LA LIM</button></a> -->
+    <!-- <a class="enter-room-button">PARTECIPA</a> -->
+    <!-- <a class="access-chat" href="globalChat_index.html"> SONO LA CHAT </a> -->
+
+    <!-- <script src="sketch.js"></script> -->
+
+    <p class="main" class="enter-room-button">Partecipa</p>
+ 
+    <p class="main" id="txt1">
+      Create <br />
+      your<br />
+      server
+    </p>
+
+    <p class="main" id="txt2">
+      Find<br />
+      the<br />
+      clients<br />
+    </p>
+
+    <p class="main" id="txt3">
+      Send<br />
+      and<br />
+      collect<br />
+      messages
+    </p>
+  </body>
+
+  <script>
+    const txt1 = document.getElementById("txt1");
+    const txt2 = document.getElementById("txt2");
+    const txt3 = document.getElementById("txt3");
+
+    setTimeout(() => {
+      txt1.style.display = "flex";
+    }, 3000);
+
+    setTimeout(() => {
+      txt1.style.display = "none";
+      txt2.style.display = "flex";
+    }, 6000);
+
+    setTimeout(() => {
+      txt2.style.display = "none";
+      txt3.style.display = "flex";
+    }, 9000);
+
+    setTimeout(() => {
+      txt3.style.display = "none";
+    }, 12000);
+  </script>
+</html>

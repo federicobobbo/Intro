@@ -1,0 +1,177 @@
+/**********GENERAL**********/
+
+:root {
+  /* Palette */
+  --verde: #5fee87;
+  --rosa: #dfabff;
+  --arancio: #ecac4c;
+  --rosso: #ec5555;
+  --grigiochiaro: #cdcdcd;
+  --grigiomedio: #b7b6b6;
+  --grigioscuro: #929292;
+  --nero: #000000;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: var(--nero);
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+.center p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.topnav {
+  width: 100%;
+  height: 33px;
+  font-size: 16pt;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: var(--grigiochiaro);
+  text-align: center;
+  display: flex;
+  position: fixed;
+}
+
+.main {
+  position: fixed;
+  width: 80vw;
+  height: 80vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  line-height: 107%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 32pt;
+
+}
+
+.btn {
+  width: 100%;
+  height: 33px;
+  font-size: 16pt;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: var(--grigiochiaro);
+  text-align: center;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  text-align:center; 
+}
+
+.navbtn {
+  width: 100%;
+  cursor: pointer;
+}
+
+/**********CHAT**********/
+
+.navbtn.active {
+  background-color: var(--grigioscuro);
+}
+
+.box {
+  width: 99%;
+  font-size: 30pt;
+  line-height: 32pt;
+  padding: 0.5%;
+  font-weight: bold;
+  color: var(--nero);
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  top: 33px;
+  z-index: 1;
+  display: none;
+}
+
+.chat-container {
+  height: 100%;
+  overflow: scroll;
+}
+s
+.client1 {
+  background-color: var(--verde);
+}
+
+.client2 {
+  background-color: var(--rosa);
+}
+
+.client3 {
+  background-color: var(--arancio);
+}
+
+.client4 {
+  background-color: var(--rosso);
+}
+
+/**********SEND**********/
+
+#ascicanvas {
+  width: 100vw;
+  height: 60vh;
+}
+
+#message-input {
+  border: none;
+}
+
+
+#myTopnav {
+  width:100%;
+  height:33px;
+  font-size: 16pt;
+}
+
+.enter-room-button {cursor: pointer;
+  width: 100%;
+  height: 33px;
+  font-size: 16pt;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: var(--grigiochiaro);
+  text-align: center;
+  display: flex;
+  position: fixed;}
+
+.active {display: block;}
+.inactive {display: none;}
+.disabled {opacity: 0.5; pointer-events: none; cursor:auto}
+
+
+#txt1 {
+  display: none;
+}
+
+#txt2 {
+  display: none;
+}
+
+#txt3 {
+  display: none;
+}
+
